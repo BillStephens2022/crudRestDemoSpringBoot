@@ -9,14 +9,14 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class EmployeeDAOJpaImpl implements EmployeeDAO {
+public class EmployeeDAOJpaImpl_old implements EmployeeDAO_old {
 
     // define field for entity manager
     private EntityManager entityManager;
 
     // set up constructor injection
     @Autowired
-    public EmployeeDAOJpaImpl(EntityManager theEntityManager) {
+    public EmployeeDAOJpaImpl_old(EntityManager theEntityManager) {
         entityManager = theEntityManager;
     }
 
